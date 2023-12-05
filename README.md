@@ -4,4 +4,4 @@
 
 ** For this project, we will be using the console has our front-end for the purpose of building the back-end.
 
-![Airbnb](https://www.pngfind.com/mpng/miiwh_airbnb-logo-9-22-de-outubro-de-airbnb/)
+![Airbnb](https://1000logos.net/wp-content/uploads/2017/08/Color-Airbnb-Logo-500x354.jpg)
