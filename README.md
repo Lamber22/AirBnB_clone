@@ -1,0 +1,2 @@
+This is a complete web application, that has database storage, a front -end and a back-end API of Airbnb.
+For this project, we will be using the console has our front-end for the purpose of building the back-end.
