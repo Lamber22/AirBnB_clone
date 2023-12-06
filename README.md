@@ -15,4 +15,3 @@
 - **Jack Ndiritu**
 - **Lamber Joe**
 
-<img align="center" src="master/unnamed.png" alt="footer" width="150"  height="150"/>
