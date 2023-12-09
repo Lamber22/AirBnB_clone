@@ -14,9 +14,9 @@ from models.base_model import BaseModel
 
 
 class TestBaseModel_instantiation(unitest.TestCase):
-    """Unittests for testing intantiation of the BaseModel class."""
+    Unittests for testing intantiation of the BaseModel class.
 
     def test_no_args_instances(self):
         self.assertEqual(BaseModel, type(BaseModel()))
 
-    def 
+    def
