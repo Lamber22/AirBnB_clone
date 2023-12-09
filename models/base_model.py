@@ -19,7 +19,7 @@ class BaseModel:
         Args:
             *args (any) - Unused
             **kwargs(dict) - key/value pairs of attributes
-        """ 
+        """
         tformat = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid4())
         self.created_at = datetime.today()
