@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# base_model.py
 
 """Defines the BaseModel class that defines all attributes and methods
 for other classes.
