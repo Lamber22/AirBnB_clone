@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-
-"""Defines the BaseModel class that defines
-all attributes and methods for other classes.
-"""
+"""Defines the BaseModel class."""
 import models
 from uuid import uuid4
 from datetime import datetime
