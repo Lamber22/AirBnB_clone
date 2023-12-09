@@ -1,41 +1,39 @@
 #!/usr/bin/python3
 
-"""Defines the BaseModel class that defines all attributes and methods
-for other classes.
+"""Defines the BaseModel class that defines
+all attributes and methods for other classes.
 """
 import models
 from uuid import uuid4
 from datetime import datetime
 
-"""Defines a base class that defines all attributes/methods"""
-
 
 class BaseModel:
-    """Represents the Base class for HBnB project."""
+    """Represents the BaseModel of the HBnB project."""
 
     def __init__(self, *args, **kwargs):
-        """Initializes a new BaseModel.
+        """Initialize a new BaseModel.
+
         Args:
-            *args (any) - Unused
-            **kwargs(dict) - key/value pairs of attributes
+            *args (any): Unused.
+            **kwargs (dict): Key/value pairs of attributes.
         """
-        tformat = "%Y-%m-%dT%H:%M:%S.%f"
+        tform = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid4())
         self.created_at = datetime.today()
         self.updated_at = datetime.today()
-
         if len(kwargs) != 0:
             for k, v in kwargs.items():
                 if k == "created_at" or k == "updated_at":
-                    self.__dict__[k] = datetime.strptime(v, t_format)
+                    self.__dict__[k] = datetime.strptime(v, tform)
                 else:
                     self.__dict__[k] = v
         else:
             models.storage.new(self)
 
     def save(self):
-        """Update updated_at with the current datetime"""
-        self.updated_at = datetime.now()
+        """Update updated_at with the current datetime."""
+        self.updated_at = datetime.today()
         models.storage.save()
 
     def to_dict(self):
@@ -53,4 +51,4 @@ class BaseModel:
     def __str__(self):
         """Return the print/str representation of the BaseModel instance."""
         clname = self.__class__.__name__
-        return f"[{clname}] ({self.id}) {self.__dict__}"
+        return "[{}] ({}) {}".format(clname, self.id, self.__dict__)
