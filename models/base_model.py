@@ -4,10 +4,6 @@
 """Defines the BaseModel class that defines all attributes and methods
 for other classes.
 """
-
-"""Defines the BaseModel class that defines all attributes and methods
-for other classes.
-"""
 import models
 from uuid import uuid4
 from datetime import datetime
@@ -21,14 +17,10 @@ class BaseModel:
     def __init__(self, *args, **kwargs):
         """Initializes a new BaseModel.
         Args:
-            *args (any) - any
+            *args (any) - Unused
             **kwargs(dict) - key/value pairs of attributes
-        """
-        t_format = '%Y-%m-%dT%H:%M:%S.%f'
-            *args (any) - Unused.
-            **kwargs(dict) - key/value pairs of attributes.
-        """
-        tform = "%Y-%m-%dT%H:%M:%S.%f"
+        """ 
+        tformat = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid4())
         self.created_at = datetime.today()
         self.updated_at = datetime.today()
@@ -55,19 +47,9 @@ class BaseModel:
         rdict = self.__dict__.copy()
         rdict["created_at"] = self.created_at.isoformat()
         rdict["updated_at"] = self.updated_at.isoformat()
-        rdict["__class__"] = self.__class__.__name__
-        Includes the key/value pair __class__ representing
-        the class name of the object.
-        """"
-
-        rdict = self.__dict__.copy()
-        rdict["created_at"] = self.created_at.isoformat()
-        rdict["updated_at"] = self.updated_at.isoformat()
         rdict["__class__"] = self.__clas__.__name__
 
     def __str__(self):
         """Return the print/str representation of the BaseModel instance."""
         clname = self.__class__.__name__
-<<<<<<< HEAD
-<<<<<<< HEAD
         return f"[{clname}] ({self.id}) {self.__dict__}"
