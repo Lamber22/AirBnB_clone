@@ -5,7 +5,8 @@ import models
 from uuid import uuid4
 from datetime import datetime
 
-"""Defines a base class that defines all attributes/methods for other classes"""
+"""Defines a base class that defines all attributes/methods"""
+
 
 class BaseModel:
     """Represents the Base class for this project"""
@@ -14,10 +15,9 @@ class BaseModel:
         """Initializes a new BaseModel.
 
         Args:
-            *args (any) - any 
+            *args (any) - any
             **kwargs(dict) - key/value pairs of attributes
         """
-        
         t_format = '%Y-%m-%dT%H:%M:%S.%f'
         self.id = str(uuid4())
         self.created_at = datetime.now()
