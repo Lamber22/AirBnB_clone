@@ -1,11 +1,12 @@
 header {
     background-image: url("../images/logo.png");
     background-repeat: no-repeat;
-    background-color: white;
     background-position: left 20px center;
-    position: absolute;
+    background-color: white;
+    top: 0;
     height: 70px;
     width: 100%;
-    border-top: 1px #CCCCCC;
-    top: 0;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+    border-bottom-width: 1px;
 }

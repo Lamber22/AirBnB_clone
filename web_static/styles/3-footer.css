@@ -1,15 +1,15 @@
 footer {
     background-color: white;
-    height: 70px;
-    width: 100%;
-    border-width: 1px;
-    border-color: #CCCCCC;
-    border-style: solid;
     position: absolute;
-    bottom: 0;
-    
+    bottom: -1100px;
+    height: 60px;
+    width: 100%;
+    border-top-style: solid;
+    border-top-color: #CCCCCC;
+    border-top-width: 1px;
+    justify-content: center;
 }
-div {
+.foot_div {
     text-align: center;
     vertical-align: middle;
     line-height: 60px;
