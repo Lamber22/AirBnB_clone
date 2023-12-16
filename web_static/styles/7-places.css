@@ -1,0 +1,45 @@
+.places {
+    margin-top: 0;
+    padding: 0;
+}
+
+.places h1 {
+    float: left;
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.places article {
+    position: relative;
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: solid 1px #FF5A5F;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.places-1 {
+    top: 60px;
+    left: -80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.places-2 {
+    top: -205px;
+    left: 500px;
+    position: relative;
+}
+
+.places-3 {
+    top: 50px;
+    left: -211px;
+    position: relative;
+}
+
+.places h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -5px;
+}
