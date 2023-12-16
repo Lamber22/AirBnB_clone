@@ -5,3 +5,7 @@ body {
     font-size: 14px;
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+.container {
+    width: 100%;
+    height: 100%;
+}
