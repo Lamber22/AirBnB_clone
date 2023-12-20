@@ -1,23 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="utf-8">
-      <title>AirBnB clone</title>
-      <link rel="stylesheet" href="styles/reset.css">
-      <link rel="stylesheet" href="styles/4-common.css">
-      <link rel="stylesheet" href="styles/3-header.css">
-      <link rel="stylesheet" href="styles/3-footer.css">
-      <link rel="stylesheet" href="styles/6-filters.css">
-      <link rel="stylesheet" href="styles/100-places.css">
-      <link rel="icon" href="images/icon.png">
-  </head>
+	<head>
+		<meta charset="utf-8">
+		<title>AirBnB clone</title>
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/4-common.css">
+		<link rel="stylesheet" href="styles/3-header.css">
+		<link rel="stylesheet" href="styles/3-footer.css">
+		<link rel="stylesheet" href="styles/6-filters.css">
+		<link rel="stylesheet" href="styles/100-places.css">
+		<link rel="icon" href="images/icon.png">
+	</head>
 
-<body>
-  <header></header>
+	<body>
+		<header></header>
 
-  <div class="container">
-    <section class="filters">
-      <div class="locations">
-        <h3>States</h3>
-	<h4>Sinkor, Paynesville, Totota....</h4>
-
+		<div class="container">
+			<section class="filters">
+				<div class="locations">
+					<h3>States</h3>
+					<h4>Sinkor, Paynesville, Arizona....</h4>
+					<ul class="popover">
+						<h2>Sinkor</h2>
+						<li>Boulevard Palace</li>
+						<li>Royal Hotel</li>
+						<h2>Paynesville</h2>
+						<li>Joe motel</li>
+						<li>ELWA Guest House</li>
+						<h2>Arizona</h2>
+						<li>Toyota Guest House</li>
+						<li>Maimue Motel</li>
+					</ul>
+				</div>
+				<div class "amenities">
+					<h3>Amenities</h3>
+					<h4>internet, kitchen...</h4>
+					<ul class="popover">
+						<li>internet</li>
+						<li>kitchen</li>
+						<li>Tv</li>
+						<li>Iron</li>
+					</ul>
+				</div>
+				<button>Search</button>
+			</section>
+			<section class="places">
+				<h1>Places</h1>
+				<article>
+					<h2>My home</h2>
+					<div class="price_by_night">$80</div>
+					<div class="information">
+						<div class="max_guest">2 Guests</div>
+						<div class="number_rooms">1 Bedroom</div>
+						<div class="number_bathrooms">1 Bathroom</div>
+					</div>
+					<div class="user">
+						<h3>Owner</h3><h4> Jack Ndiritu<h4>
+					</div>
+					<div class="description">
+						Immerse yourself in tranquility. Unwind in this carefully curated space adorned with peaceful vibes and thoughtful touches. Whether you're a solo traveler or a duo seeking relaxation, this is your oasis.
+					</div>
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li class="tv">Tv</li>
+							<li class="wifi">WIFI</li>
+							<li class="pets">Pets friendly</li>
+						</ul>
+					</div>
+					<div class="reviews">
+						<h2>Reviews</h2>
+						<ul>
+							<li>
+								<h3>From Eva Dylan the 27th January 2023</h3>
+								<p>Jack is an amazing host, this is all I can say</p>
+							</li>
+							<li>
+								<h3>From Tony Stark the 17th April 2022</h3>
+								<p>This place is the coolest place I went to, and I am a millionaire</p>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<h2>Tiny house</h2>
+					<div class="price_by_night">$65</div>
+					<div class="information">
+						<div class="max_guest">4 Guests</div>
+						<div class="number_rooms">2 Bedrooms</div>
+						<div class="number_bathrooms">2 bathrooms</div>
+					</div>
+					<div class="user">
+						<h3>Owner: </h3><h4>Andrew</h4>
+					</div>
+					<div class="description">
+						Dive into a miniature paradise where every inch is designed to maximize comfort. Ideal for a small group getaway, this tiny house is big on charm and will make your stay truly unforgettable.
+					</div>
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li class="tv">Tv</li>
+							<li class="wifi">WIFI</li>
+						</ul>
+					</div>
+					<div class="reviews">
+						<h2>Reviews</h2>
+						<ul>
+							<li>
+								<h3>From Mary Kibet the 18th May 2022</h3>
+								<p>T his is the coolest place I went to, and I am a millionaire</p>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<h2>A Suite</h2>
+					<div class="price_by_night">$190</div>
+					<div class="information">
+						<div class="max_guest">6 Guests</div>
+						<div class="number_rooms">3 Bedrooms</div>
+						<div class="number_bathrooms">3 Bathrooms</div>
+					</div>
+					<div class="user">
+						<h3>Owner: </h3><h4>Wellington Davidson</h4>
+					</div>
+					<div class="description">
+						Indulge in opulence and sophistication. This suite is a santuary of luxury, boasting spacious rooms, exquisite decor, and top notch amenities. Elevate your travel experience and make every moment extraordinary.
+					</div>
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li class="pets">Pets friendly</li>
+						</ul>
+					</div>
+					<div class="reviews">
+						<h2>Reviews</h2>
+						<ul>
+							<li>
+								<h3>From Tony Stark the 17th March 2023</h3>
+								<p>This is the best place I have ever visited in this region.</p>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+		</div>
+		<footer>
+			<p>Best School</p>
+		</footer>
+	</body>
+</html>
