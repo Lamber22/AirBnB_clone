@@ -1,0 +1,42 @@
+/*
+ * === Places class style ===
+ *
+ */
+
+/* Places flexbox */
+.places {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+/* Article style*/
+.places article {
+	border: 1px solid #ff5a5f;
+	border-radius: 4px;
+	margin: 20px;
+	padding: 20px;
+	width: 390px;
+}
+
+/* Price by night circle */
+.places .price_by_night {
+	align-items: center;
+	border: 4px solid #ff5a5f;
+	border-radius: 50%;
+	color: #ff5a5f;
+	display: flex;
+	font-size 30px;
+	height: 60px;
+	justify-content: center;
+	min-width: 60px;
+}
+/* Name and price header */
+.places .places_places-1 {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
